@@ -262,11 +262,11 @@ export default function Home() {
             </div>
 
             {/* Premium Plan */}
-            <div className="relative bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 shadow-xl overflow-hidden">
+            <div className="relative bg-background rounded-2xl border border-border/50 shadow-lg overflow-hidden">
               <div className="absolute top-4 right-4">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/20 rounded-full">
-                  <Zap className="h-3.5 w-3.5 text-primary" />
-                  <span className="text-xs font-medium text-primary">Most Popular</span>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-muted rounded-full">
+                  <Zap className="h-3.5 w-3.5 text-foreground" />
+                  <span className="text-xs font-medium text-foreground">Most Popular</span>
                 </div>
               </div>
 
@@ -307,7 +307,7 @@ export default function Home() {
 
                 {!loading && (
                   <Link href={user ? "/analyze" : "/signup"} className="block">
-                    <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button size="lg" className="w-full bg-black text-white hover:bg-black/90">
                       Get Detailed Report
                     </Button>
                   </Link>

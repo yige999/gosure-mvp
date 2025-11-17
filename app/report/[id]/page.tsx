@@ -294,6 +294,9 @@ export default function ResultsPage() {
               <p className="text-xs sm:text-sm text-gray-400 mt-3">
                 One-time payment • Instant access • 30-day money-back guarantee
               </p>
+              <p className="text-xs text-gray-500 mt-2">
+                Questions? Email <a href="mailto:hello@gosure.online" className="underline">hello@gosure.online</a>
+              </p>
             </div>
           </div>
         )}

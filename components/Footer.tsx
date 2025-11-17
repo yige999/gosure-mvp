@@ -42,12 +42,20 @@ export function Footer() {
             <h4 className="text-white font-medium text-xs sm:text-sm">Company</h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a
-                  href="mailto:hello@gosure.online"
+                <Link
+                  href="/about"
+                  className="text-xs sm:text-sm hover:text-white transition-colors duration-200"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
                   className="text-xs sm:text-sm hover:text-white transition-colors duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
