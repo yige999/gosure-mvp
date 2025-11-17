@@ -45,15 +45,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left: Content with much more breathing room */}
             <div className="space-y-8 sm:space-y-12 max-w-2xl">
-              <div className="inline-flex items-center gap-3 px-3 py-2 rounded-full border border-border/50 bg-accent/30 backdrop-blur-sm">
-                <div className="flex -space-x-1.5">
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 border border-background" />
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-purple-400 to-purple-500 border border-background" />
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-500 border border-background" />
-                </div>
-                <span className="text-[12px] sm:text-[13px] font-medium text-muted-foreground">Trusted by 50+ startups</span>
-              </div>
-
               <h1 className="text-balance text-3xl sm:text-5xl lg:text-[84px] leading-[1.1] sm:leading-[1.08] font-bold tracking-[-0.04em] text-foreground">
                 Know Exactly When to Start SOC 2
               </h1>
@@ -75,13 +66,19 @@ export default function Home() {
                   </Link>
                 )}
               </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Free basic analysis · $49 for detailed report
+                </p>
+              </div>
             </div>
 
             <div className="relative lg:block hidden perspective-1000">
               <div className="relative transform-gpu hover:rotate-y-2 hover:rotate-x-1 transition-transform duration-700 ease-out" style={{ transformStyle: 'preserve-3d' }}>
                 {/* Softer, more subtle glow */}
                 <div className="absolute -inset-8 bg-gradient-to-r from-primary/10 via-primary/15 to-primary/10 blur-[80px] animate-pulse-slow" />
-                
+
                 {/* Product mockup with minimal styling */}
                 <Card className="relative border shadow-2xl overflow-hidden backdrop-blur-sm bg-card/95">
                   <CardContent className="p-0">
@@ -94,14 +91,14 @@ export default function Home() {
                           <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
                         </div>
                       </div>
-                      
+
                       {/* Clean content */}
                       <div className="space-y-8">
                         <div className="space-y-4">
                           <div className="text-white/40 text-sm font-medium tracking-wide uppercase">Your Recommendation</div>
                           <div className="text-white text-4xl font-bold tracking-tight">Start in 4-6 months</div>
                         </div>
-                        
+
                         <div className="grid grid-cols-2 gap-5">
                           <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/5">
                             <div className="text-emerald-400 text-xs font-medium mb-3 uppercase tracking-wider">Revenue Stage</div>
@@ -112,7 +109,7 @@ export default function Home() {
                             <div className="text-white text-xl font-semibold">Low</div>
                           </div>
                         </div>
-                        
+
                         <div className="space-y-4 pt-3">
                           <div className="flex items-center gap-4 text-white/70">
                             <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0" />
@@ -163,7 +160,7 @@ export default function Home() {
 
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">Answer 8 Questions</h3>
-                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
+                <p className="text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Tell us about your revenue, sales pipeline, and engineering capacity
                 </p>
               </div>
@@ -183,7 +180,7 @@ export default function Home() {
 
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">AI Analyzes</h3>
-                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
+                <p className="text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Our algorithm weighs your business stage against compliance costs
                 </p>
               </div>
@@ -203,7 +200,7 @@ export default function Home() {
 
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">Get Recommendation</h3>
-                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
+                <p className="text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Receive your optimal timeline with clear next steps and risk analysis
                 </p>
               </div>
@@ -212,128 +209,111 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 py-20 lg:px-12 lg:py-52">
-        <div className="mx-auto max-w-[1400px]">
-          <div className="text-center mb-16 sm:mb-20 lg:mb-28 space-y-6 max-w-3xl mx-auto">
+      {/* Pricing Section */}
+      <section className="px-4 sm:px-6 py-20 lg:px-12 lg:py-52 bg-gray-50 dark:bg-gray-900/30">
+        <div className="relative mx-auto max-w-[1400px]">
+          <div className="text-center mb-16 sm:mb-20 lg:mb-32 space-y-6 max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
-              The Cost of Bad Timing
+              Choose Your Analysis Plan
             </h2>
             <p className="text-base sm:text-lg lg:text-[19px] text-muted-foreground leading-relaxed">
-              Real data from 50+ startups shows the financial impact of SOC 2 timing mistakes
+              Start with a free analysis, then upgrade for detailed insights
             </p>
           </div>
 
-          {/* 2x2 Grid of stat cards */}
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 max-w-5xl mx-auto mb-16 sm:mb-20">
-            {/* Card 1: Engineering Cost */}
-            <Card className="group relative border border-border/50 bg-card/50 backdrop-blur-sm hover:border-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
-              <CardContent className="pt-8 pb-8 sm:pt-12 sm:pb-12 px-6 sm:px-10 space-y-4 sm:space-y-6">
-                <div className="flex justify-center">
-                  <div className="rounded-xl sm:rounded-2xl bg-red-50/50 dark:bg-red-950/20 p-3 sm:p-4 border border-red-100/50 dark:border-red-900/30">
-                    <TrendingDown className="h-6 w-6 sm:h-8 sm:w-8 text-red-600 dark:text-red-400" />
+          <div className="grid gap-8 lg:gap-12 max-w-5xl mx-auto">
+            {/* Free Plan */}
+            <div className="relative bg-background rounded-2xl border border-border/50 shadow-lg overflow-hidden">
+              <div className="p-8 lg:p-12">
+                <div className="flex items-start justify-between mb-8">
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Free Analysis</h3>
+                    <p className="text-muted-foreground">Perfect for getting started</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-4xl font-bold text-foreground">$0</div>
+                    <p className="text-sm text-muted-foreground">Free forever</p>
                   </div>
                 </div>
 
-                <div className="text-center space-y-2 sm:space-y-3">
-                  <div className="text-4xl sm:text-5xl lg:text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
-                    $87,000
-                  </div>
-                  <h3 className="text-base sm:text-lg lg:text-[18px] font-semibold text-foreground">
-                    Average engineering cost of starting too early
-                  </h3>
-                  <p className="text-xs sm:text-[13px] text-muted-foreground leading-relaxed">
-                    3 engineers × 4 months × $7.3K/month
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Recommended start date</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Risk analysis</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Resource impact calculation</span>
+                  </li>
+                </ul>
 
-            {/* Card 2: Lost Deal Value */}
-            <Card className="group relative border border-border/50 bg-card/50 backdrop-blur-sm hover:border-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
-              <CardContent className="pt-12 pb-12 px-10 space-y-6">
-                <div className="flex justify-center">
-                  <div className="rounded-2xl bg-amber-50/50 dark:bg-amber-950/20 p-4 border border-amber-100/50 dark:border-amber-900/30">
-                    <DollarSign className="h-8 w-8 text-amber-600 dark:text-amber-400" />
-                  </div>
-                </div>
-                
-                <div className="text-center space-y-3">
-                  <div className="text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
-                    $124,000
-                  </div>
-                  <h3 className="text-[18px] font-semibold text-foreground">
-                    Average deal value lost by starting too late
-                  </h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">
-                    Based on 50+ startup surveys
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                {!loading && (
+                  <Link href={user ? "/analyze" : "/signup"} className="block">
+                    <Button size="lg" className="w-full bg-foreground text-background hover:bg-foreground/95">
+                      {user ? "Start Free Analysis" : "Sign Up for Free"}
+                    </Button>
+                  </Link>
+                )}
+              </div>
+            </div>
 
-            {/* Card 3: Product Delay */}
-            <Card className="group relative border border-border/50 bg-card/50 backdrop-blur-sm hover:border-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
-              <CardContent className="pt-12 pb-12 px-10 space-y-6">
-                <div className="flex justify-center">
-                  <div className="rounded-2xl bg-orange-50/50 dark:bg-orange-950/20 p-4 border border-orange-100/50 dark:border-orange-900/30">
-                    <AlertCircle className="h-8 w-8 text-orange-600 dark:text-orange-400" />
-                  </div>
+            {/* Premium Plan */}
+            <div className="relative bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 shadow-xl overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/20 rounded-full">
+                  <Zap className="h-3.5 w-3.5 text-primary" />
+                  <span className="text-xs font-medium text-primary">Most Popular</span>
                 </div>
-                
-                <div className="text-center space-y-3">
-                  <div className="text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
-                    4.2 months
-                  </div>
-                  <h3 className="text-[18px] font-semibold text-foreground">
-                    Product delay from premature SOC 2 start
-                  </h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">
-                    Critical feature development paused
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            {/* Card 4: Enterprise Requirements */}
-            <Card className="group relative border border-border/50 bg-card/50 backdrop-blur-sm hover:border-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
-              <CardContent className="pt-12 pb-12 px-10 space-y-6">
-                <div className="flex justify-center">
-                  <div className="rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 p-4 border border-emerald-100/50 dark:border-emerald-900/30">
-                    <Zap className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
+              <div className="p-8 lg:p-12">
+                <div className="flex items-start justify-between mb-8">
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Detailed Report</h3>
+                    <p className="text-muted-foreground">Complete timing roadmap</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-4xl font-bold text-foreground">$49</div>
+                    <p className="text-sm text-muted-foreground">One-time payment</p>
                   </div>
                 </div>
-                
-                <div className="text-center space-y-3">
-                  <div className="text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
-                    68%
-                  </div>
-                  <h3 className="text-[18px] font-semibold text-foreground">
-                    Enterprise deals require SOC 2 at contract stage
-                  </h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">
-                    Source: 2024 SaaS Security Survey
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
 
-          {/* CTA below cards */}
-          <div className="text-center space-y-6 sm:space-y-8">
-            <p className="text-lg sm:text-xl lg:text-[21px] text-foreground font-medium max-w-2xl mx-auto">
-              Don't guess. Get data-driven timing recommendations in 2 minutes.
-            </p>
-            {!loading && (
-              <Link href={user ? "/analyze" : "/signup"} className="w-full sm:w-auto inline-block">
-                <Button
-                  size="lg"
-                  className="bg-foreground text-background hover:bg-foreground/95 text-[14px] sm:text-[15px] font-semibold px-6 sm:px-9 h-[48px] sm:h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto"
-                >
-                  {user ? "Create New Analysis" : "Calculate My Timing"}
-                  <ArrowRight className="ml-2 h-[16px] w-[16px] sm:h-[18px] sm:w-[18px]" />
-                </Button>
-              </Link>
-            )}
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Everything in Free</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Detailed month-by-month roadmap</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Vendor recommendations</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Cost breakdown analysis</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0" />
+                    <span className="text-foreground">Policy templates</span>
+                  </li>
+                </ul>
+
+                {!loading && (
+                  <Link href={user ? "/analyze" : "/signup"} className="block">
+                    <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                      Get Detailed Report
+                    </Button>
+                  </Link>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -344,7 +324,7 @@ export default function Home() {
             Ready to Find Your Perfect Timing?
           </h2>
           <p className="text-base sm:text-lg lg:text-[19px] text-muted-foreground leading-relaxed">
-            Join hundreds of startups that have optimized their SOC 2 compliance journey
+            Get data-driven timing recommendations for your SOC 2 compliance journey
           </p>
           {!loading && (
             <Link href={user ? "/analyze" : "/signup"} className="w-full sm:w-auto inline-block">
@@ -374,7 +354,7 @@ export default function Home() {
                 How accurate are the recommendations?
               </h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Our algorithm analyzes your specific situation (team size, customer demand, pipeline value) and compares it to patterns from 50+ real SOC 2 implementations. The recommendations are data-driven and tailored to early-stage startups.
+                Our algorithm analyzes your specific situation (team size, customer demand, pipeline value) to provide data-driven recommendations tailored to early-stage startups.
               </p>
             </div>
 
