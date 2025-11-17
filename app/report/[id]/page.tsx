@@ -295,7 +295,7 @@ export default function ResultsPage() {
                 One-time payment • Instant access • 30-day money-back guarantee
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                Questions? Email <a href="mailto:hello@gosure.online" className="underline">hello@gosure.online</a>
+                Questions? Email <a href="mailto:support@gosure.online" className="underline">support@gosure.online</a>
               </p>
             </div>
           </div>

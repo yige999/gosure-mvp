@@ -141,10 +141,10 @@ export default function TermsOfService() {
                 <li className="leading-relaxed">
                   To request a refund, email us at{' '}
                   <a
-                    href="mailto:hello@gosure.online"
+                    href="mailto:support@gosure.online"
                     className="text-blue-600 hover:text-blue-700 font-medium underline"
                   >
-                    hello@gosure.online
+                    support@gosure.online
                   </a>
                 </li>
               </ul>
@@ -269,10 +269,10 @@ export default function TermsOfService() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 <a
-                  href="mailto:hello@gosure.online"
+                  href="mailto:support@gosure.online"
                   className="text-blue-600 hover:text-blue-700 font-medium underline"
                 >
-                  hello@gosure.online
+                  support@gosure.online
                 </a>
               </p>
             </section>

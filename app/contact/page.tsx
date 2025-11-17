@@ -13,10 +13,10 @@ export default function ContactPage() {
               Email
             </h3>
             <a
-              href="mailto:hello@gosure.online"
+              href="mailto:support@gosure.online"
               className="text-blue-600 hover:underline text-lg"
             >
-              hello@gosure.online
+              support@gosure.online
             </a>
             <p className="text-gray-600 text-sm mt-1">
               We typically respond within 24 hours
