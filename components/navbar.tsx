@@ -40,14 +40,14 @@ export default function Navbar() {
     // 显示加载状态的导航栏
     return (
       <nav className="border-b border-border/30 bg-background/60 backdrop-blur-xl fixed top-0 left-0 right-0 z-50">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20">
-            <div className="flex items-center gap-2.5">
-              <Shield className="h-5 w-5 text-foreground" />
-              <span className="font-semibold text-[15px] tracking-tight">Gosure</span>
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex items-center justify-between h-16 sm:h-20">
+            <div className="flex items-center gap-2 sm:gap-2.5">
+              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
+              <span className="font-semibold text-[13px] sm:text-[15px] tracking-tight">Gosure</span>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="w-20 h-8 bg-muted animate-pulse rounded" />
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted animate-pulse rounded" />
             </div>
           </div>
         </div>
@@ -57,16 +57,16 @@ export default function Navbar() {
 
   return (
     <nav className="border-b border-border/30 bg-background/60 backdrop-blur-xl fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-2.5">
-            <Link href="/" className="flex items-center gap-2.5">
-              <Shield className="h-5 w-5 text-foreground" />
-              <span className="font-semibold text-[15px] tracking-tight">Gosure</span>
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="flex items-center justify-between h-16 sm:h-20">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <Link href="/" className="flex items-center gap-2 sm:gap-2.5">
+              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
+              <span className="font-semibold text-[13px] sm:text-[15px] tracking-tight">Gosure</span>
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
             {!user ? (
               // 未登录状态
               <>

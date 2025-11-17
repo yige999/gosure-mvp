@@ -54,9 +54,9 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="border-b border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
               <Link
                 href="/"
                 className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
@@ -64,14 +64,14 @@ export default function DashboardPage() {
                 <ArrowLeft className="h-4 w-4" />
                 Back to Home
               </Link>
-              <div className="h-6 w-px bg-gray-300"></div>
+              <div className="h-6 w-px bg-gray-300 hidden sm:block"></div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-                <p className="text-sm text-gray-600">{user?.email}</p>
+                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Dashboard</h1>
+                <p className="text-sm text-gray-600 truncate max-w-[200px] sm:max-w-none" title={user?.email}>{user?.email}</p>
               </div>
             </div>
             <Link href="/analyze">
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 font-semibold transition-colors">
+              <button className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 font-semibold transition-colors w-full sm:w-auto justify-center">
                 <Plus className="h-4 w-4" />
                 New Analysis
               </button>
@@ -81,18 +81,18 @@ export default function DashboardPage() {
       </div>
 
       {/* Main Content */}
-      <div className="mx-auto max-w-6xl px-6 py-12">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-12">
         {/* 统计概览 */}
         {analyses.length > 0 && (
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6">
               <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-blue-50 p-3">
-                  <FileText className="h-6 w-6 text-blue-600" />
+                <div className="rounded-lg bg-blue-50 p-2 sm:p-3">
+                  <FileText className="h-4 w-4 sm:h-6 sm:w-6 text-blue-600" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-600">Total Analyses</p>
-                  <p className="text-2xl font-bold text-gray-900">{analyses.length}</p>
+                  <p className="text-xs sm:text-sm font-medium text-gray-600">Total Analyses</p>
+                  <p className="text-xl sm:text-2xl font-bold text-gray-900">{analyses.length}</p>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function DashboardPage() {
         ) : (
           <div>
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Your Analyses</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {analyses.map((analysis) => {
                 const recommendation = analysis.recommendation
                 const createdDate = new Date(analysis.created_at).toLocaleDateString('en-US', {

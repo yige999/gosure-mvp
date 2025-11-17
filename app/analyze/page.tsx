@@ -199,12 +199,12 @@ export default function AnalyzePage() {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-6 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground mb-3 sm:mb-4">
             SOC 2 Timing Analysis
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground">
             Get data-driven recommendations for your compliance journey
           </p>
         </div>
@@ -220,8 +220,8 @@ export default function AnalyzePage() {
 
         {/* Analysis Form */}
         <div className="max-w-2xl mx-auto">
-          <Card className="p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <Card className="p-6 sm:p-8">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               {/* Team Size */}
               <div className="space-y-2">
                 <Label htmlFor="teamSize">Team Size</Label>
@@ -367,7 +367,7 @@ export default function AnalyzePage() {
                 type="submit"
                 size="lg"
                 disabled={submitting}
-                className="w-full bg-foreground text-background hover:bg-foreground/90 text-[15px] font-semibold h-12 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full bg-foreground text-background hover:bg-foreground/90 text-[14px] sm:text-[15px] font-semibold h-[48px] sm:h-12 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 {submitting ? (
                   <>
@@ -385,39 +385,39 @@ export default function AnalyzePage() {
           </Card>
 
           {/* How it works */}
-          <div className="mt-16 grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
+          <div className="mt-12 sm:mt-16 grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="text-center space-y-3 sm:space-y-4">
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-4 border border-border/50">
-                  <Clock className="h-8 w-8 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-3 sm:p-4 border border-border/50">
+                  <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-foreground" />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold">Enter Your Data</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="text-base sm:text-lg font-semibold">Enter Your Data</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">
                 Provide key metrics about your business
               </p>
             </div>
 
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-3 sm:space-y-4">
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-4 border border-border/50">
-                  <Sparkles className="h-8 w-8 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-3 sm:p-4 border border-border/50">
+                  <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 text-foreground" />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold">AI Analysis</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="text-base sm:text-lg font-semibold">AI Analysis</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">
                 Our algorithm analyzes your timing readiness
               </p>
             </div>
 
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-3 sm:space-y-4">
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-4 border border-border/50">
-                  <FileCheck className="h-8 w-8 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-3 sm:p-4 border border-border/50">
+                  <FileCheck className="h-6 w-6 sm:h-8 sm:w-8 text-foreground" />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold">Get Report</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="text-base sm:text-lg font-semibold">Get Report</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">
                 Receive personalized recommendations
               </p>
             </div>

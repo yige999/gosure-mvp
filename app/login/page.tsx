@@ -53,7 +53,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-6">
+    <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4 sm:p-6">
       {/* Same gradient background as signup */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#4c1d95]" />
 
@@ -63,14 +63,14 @@ export default function LoginPage() {
       {/* Back to Home link */}
       <Link
         href="/"
-        className="absolute top-6 left-6 text-white/80 hover:text-white transition-colors text-sm font-medium flex items-center gap-2"
+        className="absolute top-4 sm:top-6 left-4 sm:left-6 text-white/80 hover:text-white transition-colors text-sm font-medium flex items-center gap-2"
       >
         ← Back to Home
       </Link>
 
       {/* Form card */}
       <div className="relative w-full max-w-md">
-        <div className="bg-white dark:bg-card rounded-2xl shadow-2xl p-10 space-y-8">
+        <div className="bg-white dark:bg-card rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-10 space-y-6 sm:space-y-8">
           {/* Header */}
           <div className="text-center space-y-3">
             <div className="flex items-center justify-center gap-2.5 mb-4">

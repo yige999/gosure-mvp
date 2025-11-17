@@ -135,35 +135,35 @@ export default function ResultsPage() {
       </div>
 
       {/* Main Content */}
-      <div className="mx-auto max-w-4xl px-6 py-12 space-y-8">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 py-8 sm:py-12 space-y-6 sm:space-y-8">
 
         {/* Main Heading */}
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
+        <div className="text-center space-y-3 sm:space-y-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
             Your SOC 2 Timing Recommendation
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Based on your company profile and current state
           </p>
         </div>
 
         {/* Large Number Display */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-12 text-center">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 sm:p-12 text-center">
           <div className="space-y-2">
-            <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+            <p className="text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide">
               Start SOC 2 in
             </p>
-            <div className="text-7xl font-bold text-gray-900">
+            <div className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900">
               {report.recommendedDays} Days
             </div>
-            <p className="text-gray-600 text-lg">
+            <p className="text-sm sm:text-base sm:text-lg text-gray-600">
               Target start date: {targetDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
           </div>
         </div>
 
         {/* Two-Column Risk Analysis Cards */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Risk Score Card */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
             <div className="flex items-start gap-4">
@@ -278,20 +278,20 @@ export default function ResultsPage() {
                 <CheckCircle2 className="h-4 w-4" />
                 Recommended for your stage
               </div>
-              <h2 className="text-3xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
                 Get Your Personalized Roadmap
               </h2>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 Unlock detailed weekly checklists, vendor recommendations, policy templates,
                 and ongoing support from compliance experts for just $49.
               </p>
               <button
                 onClick={handleUpgrade}
-                className="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+                className="mt-6 bg-white text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg w-full sm:w-auto"
               >
                 Upgrade Now - $49
               </button>
-              <p className="text-sm text-gray-400 mt-3">
+              <p className="text-xs sm:text-sm text-gray-400 mt-3">
                 One-time payment • Instant access • 30-day money-back guarantee
               </p>
             </div>
@@ -310,12 +310,12 @@ export default function ResultsPage() {
             </div>
 
             {/* Month-by-Month Roadmap */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8">
+              <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div className="rounded-lg bg-gray-100 p-2">
-                  <Calendar className="h-5 w-5 text-gray-700" />
+                  <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">Month-by-Month Roadmap</h2>
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">Month-by-Month Roadmap</h2>
               </div>
 
               <div className="space-y-8">

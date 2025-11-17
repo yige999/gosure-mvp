@@ -35,42 +35,42 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="relative pt-52 pb-40 sm:pt-64 sm:pb-52 lg:pt-80 lg:pb-64 overflow-hidden">
+      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-80 lg:pb-64 overflow-hidden">
         {/* Softer, nearly invisible gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-accent/20 via-background to-background" />
         {/* Ultra-subtle grid */}
         <div className="absolute inset-0 bg-grid-pattern-light opacity-30" />
-        
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Left: Content with much more breathing room */}
-            <div className="space-y-12 max-w-2xl">
-              <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-border/50 bg-accent/30 backdrop-blur-sm">
+            <div className="space-y-8 sm:space-y-12 max-w-2xl">
+              <div className="inline-flex items-center gap-3 px-3 py-2 rounded-full border border-border/50 bg-accent/30 backdrop-blur-sm">
                 <div className="flex -space-x-1.5">
-                  <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 border border-background" />
-                  <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-400 to-purple-500 border border-background" />
-                  <div className="w-5 h-5 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-500 border border-background" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 border border-background" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-purple-400 to-purple-500 border border-background" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-500 border border-background" />
                 </div>
-                <span className="text-[13px] font-medium text-muted-foreground">Trusted by 50+ startups</span>
+                <span className="text-[12px] sm:text-[13px] font-medium text-muted-foreground">Trusted by 50+ startups</span>
               </div>
 
-              <h1 className="text-balance text-[56px] leading-[1.08] sm:text-[72px] lg:text-[84px] font-bold tracking-[-0.04em] text-foreground">
+              <h1 className="text-balance text-3xl sm:text-5xl lg:text-[84px] leading-[1.1] sm:leading-[1.08] font-bold tracking-[-0.04em] text-foreground">
                 Know Exactly When to Start SOC 2
               </h1>
-              
-              <p className="text-pretty text-[21px] sm:text-[23px] leading-[1.6] text-muted-foreground max-w-xl font-normal">
+
+              <p className="text-pretty text-base sm:text-lg lg:text-[21px] leading-relaxed sm:leading-[1.6] text-muted-foreground max-w-xl font-normal">
                 Data-driven timing recommendations for early-stage startups. Save engineering resources. Never miss a deal.
               </p>
-              
-              <div className="flex items-center gap-5 pt-4">
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 sm:gap-5">
                 {!loading && (
-                  <Link href={user ? "/analyze" : "/signup"}>
+                  <Link href={user ? "/analyze" : "/signup"} className="w-full sm:w-auto">
                     <Button
                       size="lg"
-                      className="bg-foreground text-background hover:bg-foreground/95 text-[15px] font-semibold px-9 h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                      className="bg-foreground text-background hover:bg-foreground/95 text-[14px] sm:text-[15px] font-semibold px-6 sm:px-9 h-[48px] sm:h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto"
                     >
                       {user ? "Create New Analysis" : "Get Your Free Analysis"}
-                      <ArrowRight className="ml-2 h-[18px] w-[18px]" />
+                      <ArrowRight className="ml-2 h-[16px] w-[16px] sm:h-[18px] sm:w-[18px]" />
                     </Button>
                   </Link>
                 )}
@@ -137,73 +137,73 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-40 lg:px-12 lg:py-52 bg-background relative overflow-hidden">
+      <section className="px-4 sm:px-6 py-20 lg:px-12 lg:py-52 bg-background relative overflow-hidden">
         <div className="relative mx-auto max-w-[1400px]">
-          <div className="text-center mb-32 space-y-6 max-w-3xl mx-auto">
-            <h2 className="text-[44px] sm:text-[52px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
+          <div className="text-center mb-16 sm:mb-24 lg:mb-32 space-y-6 max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
               How It Works
             </h2>
-            <p className="text-[19px] text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-[19px] text-muted-foreground leading-relaxed">
               Get your personalized SOC 2 timing recommendation in 3 simple steps
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-16 lg:gap-20">
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
             {/* Step 1 */}
-            <div className="relative flex flex-col items-center text-center space-y-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground text-background text-sm font-bold">
+            <div className="relative flex flex-col items-center text-center space-y-6 sm:space-y-8">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl sm:rounded-2xl bg-foreground text-background text-sm font-bold">
                 1
               </div>
-              
+
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-7 border border-border/50">
-                  <Clock className="h-10 w-10 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-5 sm:p-7 border border-border/50">
+                  <Clock className="h-8 w-8 sm:h-10 sm:w-10 text-foreground" />
                 </div>
               </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-[22px] font-semibold text-foreground">Answer 8 Questions</h3>
-                <p className="text-muted-foreground text-[15px] leading-relaxed max-w-xs">
+
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">Answer 8 Questions</h3>
+                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Tell us about your revenue, sales pipeline, and engineering capacity
                 </p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="relative flex flex-col items-center text-center space-y-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground text-background text-sm font-bold">
+            <div className="relative flex flex-col items-center text-center space-y-6 sm:space-y-8">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl sm:rounded-2xl bg-foreground text-background text-sm font-bold">
                 2
               </div>
-              
+
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-7 border border-border/50">
-                  <Sparkles className="h-10 w-10 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-5 sm:p-7 border border-border/50">
+                  <Sparkles className="h-8 w-8 sm:h-10 sm:w-10 text-foreground" />
                 </div>
               </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-[22px] font-semibold text-foreground">AI Analyzes</h3>
-                <p className="text-muted-foreground text-[15px] leading-relaxed max-w-xs">
+
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">AI Analyzes</h3>
+                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Our algorithm weighs your business stage against compliance costs
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="relative flex flex-col items-center text-center space-y-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground text-background text-sm font-bold">
+            <div className="relative flex flex-col items-center text-center space-y-6 sm:space-y-8">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl sm:rounded-2xl bg-foreground text-background text-sm font-bold">
                 3
               </div>
-              
+
               <div className="flex justify-center">
-                <div className="rounded-2xl bg-accent/50 p-7 border border-border/50">
-                  <FileCheck className="h-10 w-10 text-foreground" />
+                <div className="rounded-xl sm:rounded-2xl bg-accent/50 p-5 sm:p-7 border border-border/50">
+                  <FileCheck className="h-8 w-8 sm:h-10 sm:w-10 text-foreground" />
                 </div>
               </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-[22px] font-semibold text-foreground">Get Recommendation</h3>
-                <p className="text-muted-foreground text-[15px] leading-relaxed max-w-xs">
+
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-[22px] font-semibold text-foreground">Get Recommendation</h3>
+                <p className="text-muted-foreground text-sm sm:text-[15px] leading-relaxed max-w-xs">
                   Receive your optimal timeline with clear next steps and risk analysis
                 </p>
               </div>
@@ -212,36 +212,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-40 lg:px-12 lg:py-52">
+      <section className="px-4 sm:px-6 py-20 lg:px-12 lg:py-52">
         <div className="mx-auto max-w-[1400px]">
-          <div className="text-center mb-28 space-y-6 max-w-3xl mx-auto">
-            <h2 className="text-[44px] sm:text-[52px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
+          <div className="text-center mb-16 sm:mb-20 lg:mb-28 space-y-6 max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
               The Cost of Bad Timing
             </h2>
-            <p className="text-[19px] text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-[19px] text-muted-foreground leading-relaxed">
               Real data from 50+ startups shows the financial impact of SOC 2 timing mistakes
             </p>
           </div>
-          
+
           {/* 2x2 Grid of stat cards */}
-          <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto mb-20">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 max-w-5xl mx-auto mb-16 sm:mb-20">
             {/* Card 1: Engineering Cost */}
             <Card className="group relative border border-border/50 bg-card/50 backdrop-blur-sm hover:border-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden">
-              <CardContent className="pt-12 pb-12 px-10 space-y-6">
+              <CardContent className="pt-8 pb-8 sm:pt-12 sm:pb-12 px-6 sm:px-10 space-y-4 sm:space-y-6">
                 <div className="flex justify-center">
-                  <div className="rounded-2xl bg-red-50/50 dark:bg-red-950/20 p-4 border border-red-100/50 dark:border-red-900/30">
-                    <TrendingDown className="h-8 w-8 text-red-600 dark:text-red-400" />
+                  <div className="rounded-xl sm:rounded-2xl bg-red-50/50 dark:bg-red-950/20 p-3 sm:p-4 border border-red-100/50 dark:border-red-900/30">
+                    <TrendingDown className="h-6 w-6 sm:h-8 sm:w-8 text-red-600 dark:text-red-400" />
                   </div>
                 </div>
-                
-                <div className="text-center space-y-3">
-                  <div className="text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
+
+                <div className="text-center space-y-2 sm:space-y-3">
+                  <div className="text-4xl sm:text-5xl lg:text-[56px] font-bold bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent leading-none">
                     $87,000
                   </div>
-                  <h3 className="text-[18px] font-semibold text-foreground">
+                  <h3 className="text-base sm:text-lg lg:text-[18px] font-semibold text-foreground">
                     Average engineering cost of starting too early
                   </h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">
+                  <p className="text-xs sm:text-[13px] text-muted-foreground leading-relaxed">
                     3 engineers × 4 months × $7.3K/month
                   </p>
                 </div>
@@ -319,18 +319,18 @@ export default function Home() {
           </div>
 
           {/* CTA below cards */}
-          <div className="text-center space-y-8">
-            <p className="text-[21px] text-foreground font-medium max-w-2xl mx-auto">
+          <div className="text-center space-y-6 sm:space-y-8">
+            <p className="text-lg sm:text-xl lg:text-[21px] text-foreground font-medium max-w-2xl mx-auto">
               Don't guess. Get data-driven timing recommendations in 2 minutes.
             </p>
             {!loading && (
-              <Link href={user ? "/analyze" : "/signup"}>
+              <Link href={user ? "/analyze" : "/signup"} className="w-full sm:w-auto inline-block">
                 <Button
                   size="lg"
-                  className="bg-foreground text-background hover:bg-foreground/95 text-[15px] font-semibold px-9 h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                  className="bg-foreground text-background hover:bg-foreground/95 text-[14px] sm:text-[15px] font-semibold px-6 sm:px-9 h-[48px] sm:h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto"
                 >
                   {user ? "Create New Analysis" : "Calculate My Timing"}
-                  <ArrowRight className="ml-2 h-[18px] w-[18px]" />
+                  <ArrowRight className="ml-2 h-[16px] w-[16px] sm:h-[18px] sm:w-[18px]" />
                 </Button>
               </Link>
             )}
@@ -338,22 +338,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-48 lg:px-12 lg:py-56">
-        <div className="mx-auto max-w-3xl text-center space-y-12">
-          <h2 className="text-[44px] sm:text-[52px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
+      <section className="px-4 sm:px-6 py-20 lg:px-12 lg:py-56">
+        <div className="mx-auto max-w-3xl text-center space-y-8 sm:space-y-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-[-0.03em] text-foreground leading-[1.1]">
             Ready to Find Your Perfect Timing?
           </h2>
-          <p className="text-[19px] text-muted-foreground leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-[19px] text-muted-foreground leading-relaxed">
             Join hundreds of startups that have optimized their SOC 2 compliance journey
           </p>
           {!loading && (
-            <Link href={user ? "/analyze" : "/signup"}>
+            <Link href={user ? "/analyze" : "/signup"} className="w-full sm:w-auto inline-block">
               <Button
                 size="lg"
-                className="bg-foreground text-background hover:bg-foreground/95 text-[15px] font-semibold px-9 h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                className="bg-foreground text-background hover:bg-foreground/95 text-[14px] sm:text-[15px] font-semibold px-6 sm:px-9 h-[48px] sm:h-[52px] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto"
               >
                 {user ? "Create New Analysis" : "Start Free Analysis"}
-                <ArrowRight className="ml-2 h-[18px] w-[18px]" />
+                <ArrowRight className="ml-2 h-[16px] w-[16px] sm:h-[18px] sm:w-[18px]" />
               </Button>
             </Link>
           )}
@@ -361,59 +361,59 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
             Frequently Asked Questions
           </h2>
 
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* FAQ 1 */}
-            <div className="border-b border-gray-200 pb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="border-b border-gray-200 pb-6 sm:pb-8">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
                 How accurate are the recommendations?
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Our algorithm analyzes your specific situation (team size, customer demand, pipeline value) and compares it to patterns from 50+ real SOC 2 implementations. The recommendations are data-driven and tailored to early-stage startups.
               </p>
             </div>
 
             {/* FAQ 2 */}
-            <div className="border-b border-gray-200 pb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="border-b border-gray-200 pb-6 sm:pb-8">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
                 Is my data secure?
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Yes. All data is encrypted in transit and at rest. We use Supabase (SOC 2 compliant) for storage and never share your information with third parties.
               </p>
             </div>
 
             {/* FAQ 3 */}
-            <div className="border-b border-gray-200 pb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="border-b border-gray-200 pb-6 sm:pb-8">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
                 What's included in the free analysis?
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 You get a recommended start date, risk analysis, resource impact calculation, and strategic next steps. The $49 premium report adds detailed roadmaps, vendor comparisons, and cost breakdowns.
               </p>
             </div>
 
             {/* FAQ 4 */}
-            <div className="border-b border-gray-200 pb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="border-b border-gray-200 pb-6 sm:pb-8">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
                 Do you help with actual SOC 2 implementation?
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 We focus on timing recommendations. For actual implementation, we recommend platforms like Vanta, Drata, or Secureframe based on your needs.
               </p>
             </div>
 
             {/* FAQ 5 */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
                 What if I'm not satisfied with the premium report?
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 We offer a 30-day money-back guarantee. If you're not satisfied, email us at hello@gosure.online for a full refund.
               </p>
             </div>

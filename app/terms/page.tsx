@@ -3,22 +3,22 @@ export default function TermsOfService() {
     <div className="min-h-screen bg-white">
       {/* Simple header */}
       <header className="border-b border-gray-200 bg-white">
-        <div className="max-w-4xl mx-auto px-6 py-8">
-          <a href="/" className="text-gray-900 font-semibold text-lg hover:text-gray-700 transition-colors">
-            ← Back to gosure
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <a href="/" className="text-gray-900 font-semibold text-base sm:text-lg hover:text-gray-700 transition-colors">
+            ← Back to Gosure
           </a>
         </div>
       </header>
 
       {/* Main content */}
-      <main className="max-w-3xl mx-auto px-6 py-16 sm:py-24">
-        <div className="space-y-12">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        <div className="space-y-8 sm:space-y-12">
           {/* Title section */}
-          <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">
+          <div className="space-y-3 sm:space-y-4">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
               Terms of Service
             </h1>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-base sm:text-lg">
               Last updated: November 17, 2024
             </p>
           </div>
