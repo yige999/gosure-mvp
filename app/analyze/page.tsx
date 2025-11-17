@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ArrowRight, Shield, Clock, Sparkles, FileCheck } from 'lucide-react'
 import Link from 'next/link'
+import { Footer } from '@/components/Footer'
 
 export default function AnalyzePage() {
   const supabase = createClient()
@@ -423,6 +424,7 @@ export default function AnalyzePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

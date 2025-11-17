@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Clock, TrendingUp, Target, CheckCircle2, AlertTriangle, DollarSign, Shield, Sparkles, FileCheck, Users, TrendingDown, AlertCircle, Zap } from 'lucide-react'
 import Navbar from '@/components/navbar'
+import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 
@@ -359,6 +360,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-8">
+            {/* FAQ 1 */}
+            <div className="border-b border-gray-200 pb-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How accurate are the recommendations?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our algorithm analyzes your specific situation (team size, customer demand, pipeline value) and compares it to patterns from 50+ real SOC 2 implementations. The recommendations are data-driven and tailored to early-stage startups.
+              </p>
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="border-b border-gray-200 pb-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Is my data secure?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Yes. All data is encrypted in transit and at rest. We use Supabase (SOC 2 compliant) for storage and never share your information with third parties.
+              </p>
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="border-b border-gray-200 pb-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What's included in the free analysis?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                You get a recommended start date, risk analysis, resource impact calculation, and strategic next steps. The $49 premium report adds detailed roadmaps, vendor comparisons, and cost breakdowns.
+              </p>
+            </div>
+
+            {/* FAQ 4 */}
+            <div className="border-b border-gray-200 pb-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Do you help with actual SOC 2 implementation?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We focus on timing recommendations. For actual implementation, we recommend platforms like Vanta, Drata, or Secureframe based on your needs.
+              </p>
+            </div>
+
+            {/* FAQ 5 */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What if I'm not satisfied with the premium report?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We offer a 30-day money-back guarantee. If you're not satisfied, email us at hello@gosure.online for a full refund.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-border/30 px-6 py-16 lg:px-12">
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -372,6 +434,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <Footer />
     </div>
   )
 }

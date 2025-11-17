@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Shield, ArrowRight } from 'lucide-react'
 import Link from "next/link"
 import { createClient } from '@/lib/supabase/client'
+import { Footer } from '@/components/Footer'
 
 export default function SignupPage() {
   const [email, setEmail] = useState("")
@@ -172,6 +173,7 @@ export default function SignupPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

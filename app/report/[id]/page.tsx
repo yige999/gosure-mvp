@@ -6,6 +6,7 @@ import { createClient } from '@/lib/supabase/client'
 import { generateReport } from '@/lib/generateReport'
 import { ArrowLeft, AlertTriangle, Clock, DollarSign, Users, CheckCircle2, Zap, Unlock, Calendar, Building2, Receipt } from 'lucide-react'
 import Link from 'next/link'
+import { Footer } from '@/components/Footer'
 
 export default function ResultsPage() {
   const params = useParams()
@@ -553,6 +554,7 @@ export default function ResultsPage() {
         )}
 
       </div>
+      <Footer />
     </div>
   )
 }

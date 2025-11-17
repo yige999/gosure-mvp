@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Shield, ArrowRight } from 'lucide-react'
 import Link from "next/link"
 import { createClient } from '@/lib/supabase/client'
+import { Footer } from '@/components/Footer'
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -164,6 +165,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

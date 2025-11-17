@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import Link from 'next/link'
 import { ArrowLeft, Plus, FileText, Users, TrendingUp, Clock, DollarSign, Calendar } from 'lucide-react'
+import { Footer } from '@/components/Footer'
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -242,6 +243,7 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   )
 }
