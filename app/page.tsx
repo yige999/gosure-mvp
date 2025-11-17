@@ -394,7 +394,7 @@ export default function Home() {
                 What if I'm not satisfied with the premium report?
               </h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                We offer a 30-day money-back guarantee. If you're not satisfied, email us at hello@gosure.online for a full refund.
+                We offer a 30-day money-back guarantee. If you're not satisfied, email us at support@gosure.online for a full refund.
               </p>
             </div>
           </div>

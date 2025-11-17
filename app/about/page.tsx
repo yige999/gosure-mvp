@@ -37,7 +37,7 @@ export default function AboutPage() {
             Contact
           </h2>
           <p className="text-gray-700">
-            Email: <a href="mailto:hello@gosure.online" className="text-blue-600 hover:underline">hello@gosure.online</a>
+            Email: <a href="mailto:support@gosure.online" className="text-blue-600 hover:underline">support@gosure.online</a>
           </p>
         </div>
       </div>
