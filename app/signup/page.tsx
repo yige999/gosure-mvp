@@ -63,14 +63,16 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4 sm:p-6">
+    <div className="min-h-screen relative overflow-hidden p-4 sm:p-6">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#4c1d95]" />
 
       {/* Subtle grid pattern overlay */}
       <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
-      {/* Form card */}
-      <div className="relative w-full max-w-md">
+      {/* Form container */}
+      <div className="flex items-center justify-center min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-3rem)]">
+        {/* Form card */}
+        <div className="relative w-full max-w-md">
         <div className="bg-white dark:bg-card rounded-2xl shadow-2xl p-10 space-y-8">
           {/* Header */}
           <div className="text-center space-y-3">
@@ -172,6 +174,7 @@ export default function SignupPage() {
             </p>
           </div>
         </div>
+      </div>
       </div>
       <Footer />
     </div>
