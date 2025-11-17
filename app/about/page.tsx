@@ -34,6 +34,21 @@ export default function AboutPage() {
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            Real Product, Real Founder
+          </h2>
+          <p className="text-gray-700 mb-6">
+            <strong>This is a live product, not a demo or test project.</strong> Gosure is actively maintained and supported by a real founder committed to helping startups navigate their SOC 2 compliance journey.
+          </p>
+
+          <p className="text-gray-700 mb-6">
+            <strong>Real Business Model:</strong> We operate on a straightforward pricing model - free basic analysis and optional $49 detailed reports. This allows us to provide value to startups while sustaining the product's continued development and support.
+          </p>
+
+          <p className="text-gray-700 mb-6">
+            <strong>Real Commitment:</strong> When you use Gosure, you're getting insights from someone who understands the startup journey firsthand. Every analysis is processed, every support email is read, and every feature improvement is made with real users in mind.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             Contact
           </h2>
           <p className="text-gray-700">

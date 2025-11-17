@@ -67,10 +67,18 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="mt-8 text-center">
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Free basic analysis · $49 for detailed report
-                </p>
+              <div className="mt-6 text-center">
+                <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
+                  <div>
+                    <div className="text-sm text-gray-300">Free Analysis</div>
+                    <div className="text-lg font-bold text-white">$0</div>
+                  </div>
+                  <div className="h-8 w-px bg-white/20"></div>
+                  <div>
+                    <div className="text-sm text-gray-300">Premium Report</div>
+                    <div className="text-lg font-bold text-white">$49</div>
+                  </div>
+                </div>
               </div>
             </div>
 
