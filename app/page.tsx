@@ -95,33 +95,22 @@ export default function Home() {
                       {/* Clean content */}
                       <div className="space-y-8">
                         <div className="space-y-4">
-                          <div className="text-white/40 text-sm font-medium tracking-wide uppercase">Your Recommendation</div>
-                          <div className="text-white text-4xl font-bold tracking-tight">Start in 4-6 months</div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-5">
-                          <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/5">
-                            <div className="text-emerald-400 text-xs font-medium mb-3 uppercase tracking-wider">Revenue Stage</div>
-                            <div className="text-white text-xl font-semibold">$500K ARR</div>
-                          </div>
-                          <div className="bg-white/[0.03] rounded-2xl p-6 border border-white/5">
-                            <div className="text-blue-400 text-xs font-medium mb-3 uppercase tracking-wider">Risk Level</div>
-                            <div className="text-white text-xl font-semibold">Low</div>
-                          </div>
+                          <div className="text-white/40 text-sm font-medium tracking-wide uppercase">Get Your Analysis</div>
+                          <div className="text-white text-4xl font-bold tracking-tight">Personalized Recommendations</div>
                         </div>
 
                         <div className="space-y-4 pt-3">
                           <div className="flex items-center gap-4 text-white/70">
                             <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0" />
-                            <span className="text-[15px]">Engineering capacity aligned</span>
+                            <span className="text-[15px]">Data-driven timing analysis</span>
                           </div>
                           <div className="flex items-center gap-4 text-white/70">
                             <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0" />
-                            <span className="text-[15px]">Enterprise deals in pipeline</span>
+                            <span className="text-[15px]">Risk assessment included</span>
                           </div>
                           <div className="flex items-center gap-4 text-white/70">
                             <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0" />
-                            <span className="text-[15px]">Optimal timing window</span>
+                            <span className="text-[15px]">Actionable insights</span>
                           </div>
                         </div>
                       </div>

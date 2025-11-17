@@ -16,14 +16,14 @@ export default function AboutPage() {
             The Problem We Solve
           </h2>
           <p className="text-gray-700 mb-6">
-            Every B2B SaaS startup faces the same question: "When should we start SOC 2?" Start too early, and you waste 3-4 months of engineering time. Start too late, and you lose $100k+ enterprise deals.
+            Every B2B SaaS startup faces the same question: "When should we start SOC 2?" Start too early, and you waste months of engineering time. Start too late, and you risk losing valuable enterprise deals.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             How It Works
           </h2>
           <p className="text-gray-700 mb-6">
-            Our algorithm analyzes your team size, customer demand, funding stage, and pipeline value to recommend the optimal timing for starting SOC 2 certification. The recommendation is based on patterns from 50+ real implementations.
+            Our algorithm analyzes your team size, customer demand, funding stage, and pipeline value to recommend the optimal timing for starting SOC 2 certification. The recommendation is based on industry best practices and compliance requirements.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
