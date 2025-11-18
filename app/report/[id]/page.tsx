@@ -115,8 +115,8 @@ export default function ResultsPage() {
     // 保存analysis_id到sessionStorage
     sessionStorage.setItem('pending_analysis_id', params.id)
 
-    // 跳转到Creem支付
-    window.location.href = 'https://www.creem.io/test/payment/prod_1d01MiYNklFq79h4NWKbfp'
+    // 跳转到Creem正式支付链接
+    window.location.href = 'https://www.creem.io/payment/prod_65VoefhBqsJGcjxwE3dQQZ'
   }
 
   return (
