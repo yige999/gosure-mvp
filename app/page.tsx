@@ -67,17 +67,24 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="mt-6 text-center">
-                <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
-                  <div>
-                    <div className="text-sm text-gray-300">Free Analysis</div>
-                    <div className="text-lg font-bold text-white">$0</div>
-                  </div>
-                  <div className="h-8 w-px bg-white/20"></div>
-                  <div>
-                    <div className="text-sm text-gray-300">Premium Report</div>
-                    <div className="text-lg font-bold text-white">$49</div>
-                  </div>
+              <p className="mt-4 text-sm text-white/80">
+                Questions?{' '}
+                <a
+                  href="mailto:support@gosure.online"
+                  className="text-white underline hover:text-white/90"
+                >
+                  support@gosure.online
+                </a>
+              </p>
+
+              <div className="mt-6 flex justify-center gap-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/30">
+                  <div className="text-sm text-white/70">Free Analysis</div>
+                  <div className="text-2xl font-bold text-white">$0</div>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/30">
+                  <div className="text-sm text-white/70">Premium Report</div>
+                  <div className="text-2xl font-bold text-white">$49</div>
                 </div>
               </div>
             </div>
