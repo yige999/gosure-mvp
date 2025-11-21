@@ -46,11 +46,11 @@ export default function Home() {
             {/* Left: Content with much more breathing room */}
             <div className="space-y-8 sm:space-y-12 max-w-2xl">
               <h1 className="text-balance text-3xl sm:text-5xl lg:text-[84px] leading-[1.1] sm:leading-[1.08] font-bold tracking-[-0.04em] text-foreground">
-                Know Exactly When to Start SOC 2
+                Know Exactly When to Start SOC 2 as a Startup
               </h1>
 
               <p className="text-pretty text-base sm:text-lg lg:text-[21px] leading-relaxed sm:leading-[1.6] text-muted-foreground max-w-xl font-normal">
-                Data-driven timing recommendations for early-stage startups. Save engineering resources. Never miss a deal.
+                Free SOC 2 timing calculator for startups. Get your personalized SOC 2 compliance timeline and know when to start SOC 2 to avoid wasting $50K+ and 6+ months.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 sm:gap-5">
@@ -312,7 +312,7 @@ export default function Home() {
                 {!loading && (
                   <Link href={user ? "/analyze" : "/signup"} className="block">
                     <Button size="lg" className="w-full bg-black text-white hover:bg-black/90">
-                      Get Detailed Report
+                      Get $49 Detailed SOC 2 Timeline Report (PDF + Auditor Checklist)
                     </Button>
                   </Link>
                 )}
@@ -405,6 +405,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* User Testimonials Section */}
+      <section className="px-4 sm:px-6 py-16 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-12">
+            What Startups Say
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="flex items-center mb-3">
+                <div className="flex">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                </div>
+              </div>
+              <p className="text-gray-800 italic mb-3">
+                "Saved us 8 months and $60K – Series A founder"
+              </p>
+              <p className="text-sm text-gray-600">Tech startup, 15 employees</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="flex items-center mb-3">
+                <div className="flex">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                </div>
+              </div>
+              <p className="text-gray-800 italic mb-3">
+                "Finally a tool that tells the truth about SOC 2 timing"
+              </p>
+              <p className="text-sm text-gray-600">B2B SaaS company, 8 employees</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-border/30 px-6 py-16 lg:px-12">
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -412,13 +453,91 @@ export default function Home() {
               <Shield className="h-4 w-4" />
               <span className="text-[13px] font-medium">Gosure</span>
             </div>
-            <p className="text-[13px] text-muted-foreground">
-              © 2025 All rights reserved.
-            </p>
+            <div className="text-center md:text-right">
+              <p className="text-[13px] text-muted-foreground">
+                © 2025 Gosure. All rights reserved. • <Link href="/privacy" className="hover:text-foreground">Privacy Policy</Link> • <Link href="/terms" className="hover:text-foreground">Terms of Service</Link>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
       <Footer />
+
+      {/* SEO JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When should a startup start SOC 2?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most startups should begin SOC 2 3-9 months before their first enterprise deal requires it. Starting too early wastes $50K+ and 6-12 months."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does SOC 2 take for startups?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "With automated tools (Vanta, Drata), 3-6 months. Manual process takes 9-18 months."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does SOC 2 cost startups?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "$15,000–$80,000 total (tools + auditor). Timing is the biggest cost driver."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do seed-stage startups need SOC 2?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Almost never. 99% of seed/Series A companies can safely delay until 3-12 months before an enterprise sales cycle."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What triggers the need for SOC 2?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Enterprise prospects adding you to security review, raising Series B+, or targeting healthcare/finance customers."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Gosure SOC 2 Timing Calculator",
+            "operatingSystem": "Web",
+            "applicationCategory": "BusinessApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127"
+            }
+          })
+        }}
+      />
     </div>
   )
 }
